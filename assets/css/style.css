@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+
 }
 
 a {
@@ -297,7 +298,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -326,7 +327,7 @@ h6 {
 }
 
 #hero .social-links {
-  margin-top: 30px;
+  margin-top: 13px;
 }
 
 #hero .social-links a {
@@ -416,31 +417,43 @@ section {
   font-size: 26px;
   color: #728394;
 }
-
+.about-title{
+  margin-top: 7px;
+}
+.arrow-icon {
+  padding-left: 30px;
+  margin-right: 30px;
+}
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin-right: 10px  ;
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 
 .about .content ul strong {
   margin-right: 10px;
 }
+.lim{
+  width: 125%;
+}
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 20px;
   color: #0563bb;
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+  margin-left: 20px;
 }
 
 /*--------------------------------------------------------------
