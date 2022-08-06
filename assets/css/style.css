@@ -507,7 +507,21 @@ section {
   background: none;
   border-radius: 0;
 }
-
+#i-container1:hover > #rotate{
+  animation: turn 0.3s ease-in;
+}
+@keyframes turn{
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+#i-container2:hover > #open{
+  animation: open 1s ease-in;
+}
+bi bi-envelope-open
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
