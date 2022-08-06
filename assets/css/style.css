@@ -518,10 +518,7 @@ section {
     transform: rotate(30deg);
   }
 }
-#i-container2:hover > #open{
-  animation: open 1s ease-in;
-}
-bi bi-envelope-open
+
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
