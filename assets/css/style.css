@@ -640,7 +640,15 @@ section {
 .portfolio #portfolio-flters li.filter-active {
   color: #0563bb;
 }
-
+.yt_embed{
+ align-self: center;
+ display: flex;
+}
+.yt_embed_container{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
