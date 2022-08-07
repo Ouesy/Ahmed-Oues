@@ -290,9 +290,20 @@ h6 {
   position: relative;
 }
 
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
+@media screen and (min-width: 425px) and (max-width: 768px){
+  #hero{
+    background: url("../img/hero-bg.jpg") 70%  80% no-repeat;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px){
+  #hero{
+    background: url("../img/hero-bg.jpg") 67%  80% no-repeat;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+  #hero{
+    background: url("../img/hero-bg.jpg") 70%  20% no-repeat;
+    padding-left: 100px;
   }
 }
 
@@ -454,6 +465,58 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
   margin-left: 20px;
+}
+@media only screen and (max-width: 360px){
+  .about .content ul li {
+    margin-right: 0px;
+  }
+  .about .content ul{
+    margin-right: 0px;
+  }
+  .WRAP{
+    padding: 0px;
+    margin: 0px;
+    word-wrap: break-all;
+    white-space:normal; 
+    width: 250px;
+  }
+  .email-wrap{
+    width: 250px;
+  }
+
+}
+@media only screen and (min-width:360px) and (max-width: 446px){
+  .about .content ul li {
+    margin-right: 0px;
+  }
+  .about .content ul{
+    margin-right: 0px;
+  }
+  .WRAP{
+    padding: 0px;
+    margin: 0px;
+    word-wrap: break-all;
+    white-space:normal; 
+    width: 300px;
+  }
+  .
+}
+
+@media only screen and (min-width: 446px) and (max-width: 600px){
+  .about .content ul li {
+    margin-right: 0px;
+  }
+  .about .content ul{
+    margin-right: 0px;
+  }
+  .WRAP{
+    padding: 0px;
+    margin: 0px;
+    word-wrap: break-all;
+    white-space:normal; 
+    width: 370px;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -904,7 +967,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #7ed6df;
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -912,11 +975,11 @@ section {
 }
 
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: #7ed6df;
 }
 
 .services .iconbox-orange i {
-  color: #ffa76e;
+  color: #ffbe76;
 }
 
 .services .iconbox-orange:hover .icon i {
@@ -924,11 +987,11 @@ section {
 }
 
 .services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
+  fill: #ffbe76;
 }
 
 .services .iconbox-pink i {
-  color: #e80368;
+  color: #ff7979;
 }
 
 .services .iconbox-pink:hover .icon i {
@@ -936,7 +999,7 @@ section {
 }
 
 .services .iconbox-pink:hover .icon path {
-  fill: #e80368;
+  fill: #ff7979;
 }
 
 .services .iconbox-yellow i {
