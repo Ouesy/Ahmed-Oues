@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -381,7 +382,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .section-title h2 {
@@ -499,7 +500,6 @@ section {
     white-space:normal; 
     width: 300px;
   }
-  .
 }
 
 @media only screen and (min-width: 446px) and (max-width: 600px){
@@ -721,7 +721,13 @@ section {
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-
+.portfolio-wrap-img{
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(69, 80, 91, 0);
+}
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -1124,11 +1130,21 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
+.contact .info{
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  background: #fff;
 }
-
+@media (max-width:786px){
+  .contact .info {
+    display: block;
+    justify-content: space-between;
+  }
+  .contact .info > div {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+}
 .contact .info i {
   font-size: 20px;
   color: #0563bb;
@@ -1170,10 +1186,7 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
+
 
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
