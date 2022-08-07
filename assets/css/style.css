@@ -642,7 +642,13 @@ section {
 }
 .yt_embed{
  align-self: center;
- display: flex;
+ display: flex; 
+
+}
+.yt_embed1{
+ align-self: center;
+ display: flex; 
+ height: 130%;
 }
 .yt_embed_container{
   display: flex;
