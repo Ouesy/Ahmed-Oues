@@ -12,7 +12,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 a {
   color: #0563bb;
