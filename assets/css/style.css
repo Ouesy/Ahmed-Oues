@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0097e6;
+  background: #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -152,13 +152,24 @@ h6 {
     margin-left: 100px;
   }
 }
-
+@media (min-width: 993px) {
+  .d-xl-none {
+    display: none !important;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
 */
+.fr{
+  padding-top:13px;
+  font-size: 16px;
+  text-align: center;
+  height:50px;
+  width:50px;
+}
 .nav-menu {
   padding: 0;
   display: block;
@@ -174,12 +185,33 @@ h6 {
   position: relative;
   white-space: nowrap;
 }
+.fr{
+  color: #45505b;
+}
 
+.lang-container{
+  border-radius: 50%;
+  height:50px;
+  width:50px ;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  align-items: center;
+  display: flex;
+  background-color: #f2f3f5;
+}
+.lang-container:hover .fr{
+  transition: 0.4s;
+  color: white;
+}
+.lang-container:hover{
+  transition: 0.4s;
+  background-color: #0097e6;
+}
 .nav-menu a,
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -189,7 +221,6 @@ h6 {
   height: 56px;
   width: 100%;
   overflow: hidden;
-  transition: 0.3s;
 }
 
 .nav-menu a i,
@@ -204,7 +235,6 @@ h6 {
 }
 
 @media (min-width: 992px) {
-
   .nav-menu a,
   .nav-menu a:focus {
     width: 56px;
@@ -244,7 +274,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   position: fixed;
@@ -383,7 +413,8 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .section-title h2 {
@@ -475,16 +506,16 @@ section {
 
 @media only screen and (max-width: 360px) {
   .about .content ul li {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .about .content ul {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .WRAP {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     word-wrap: break-all;
     white-space: normal;
     width: 250px;
@@ -498,16 +529,16 @@ section {
 
 @media only screen and (min-width:360px) and (max-width: 446px) {
   .about .content ul li {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .about .content ul {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .WRAP {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     word-wrap: break-all;
     white-space: normal;
     width: 300px;
@@ -516,16 +547,16 @@ section {
 
 @media only screen and (min-width: 446px) and (max-width: 600px) {
   .about .content ul li {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .about .content ul {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .WRAP {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     word-wrap: break-all;
     white-space: normal;
     width: 370px;
@@ -694,7 +725,6 @@ section {
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
@@ -748,7 +778,6 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0);
 }
 
 .portfolio .portfolio-wrap {
@@ -756,7 +785,6 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -899,7 +927,7 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  box-shadow: 0 0 30px rgba(69, 80, 91, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -942,9 +970,11 @@ section {
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  box-shadow: 0 5px 90px 0 rgba(110, 123, 131, 0.05);
 }
-
+.services{
+  padding-top:10px;
+}
 .services .icon-box .icon {
   margin: 0 auto;
   width: 100px;
@@ -992,7 +1022,7 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
 .services .iconbox-blue i {
@@ -1169,7 +1199,18 @@ section {
     padding-left: 10px;
     padding-top: 20px;
   }
+  .lang-container{
+    right: 0;
+    bottom: 0;
+  }
 }
+@media (max-width:992px) {
+  .lang-container{
+    left: 10px;
+    top: 10px;
+  }
+}
+
 
 .contact .info i {
   font-size: 20px;
@@ -1204,81 +1245,16 @@ section {
 .contact .info .phone {
   margin-top: 40px;
 }
-
+.contact{
+  padding: 80px 0;
+  padding-bottom: 160px;
+}
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #0563bb;
   color: #fff;
 }
-
-
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 4px;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
-}
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1307,7 +1283,8 @@ section {
   color: #45505b;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 #footer h3 {
